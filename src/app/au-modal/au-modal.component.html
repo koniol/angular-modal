@@ -1,0 +1,12 @@
+<div class="overlay">
+  <div class="modal">
+    <ng-container *ngIf="body else projectContent">
+      <ng-content *ngTemplateOutlet="body"></ng-content>
+    </ng-container>
+
+    <ng-template #projectContent>
+      <ng-content></ng-content>
+    </ng-template>
+
+  </div>
+</div>
